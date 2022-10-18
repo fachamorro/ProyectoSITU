@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-
+from SITU.views import *
 urlpatterns = [
+    path('', home_view, name='home'),
     path('admin/', admin.site.urls),
-    path('SITU/', include('SITU.urls')),
+    #path('SITU/', include('SITU.urls')),
+    path('pasajeros/', pasajeros, name='pasajeros'),
+    path('pasajerosEdit/<id>', pasajerosEdit, name='pasajerosEdit')
 ]
