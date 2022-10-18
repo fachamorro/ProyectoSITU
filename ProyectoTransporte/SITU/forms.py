@@ -15,7 +15,7 @@ class PasajeroFormulario(forms.ModelForm):
 class TarjetaFormulario(forms.ModelForm):
     codigo = forms.CharField(label='Codigo', widget=forms.TextInput(attrs={'class':'form-control','minlength':"1", 'maxlength':"10", 'placeholder': 'Ingrese el Codigo','required':'true'}))
     monto = forms.DecimalField(label='Monto', widget=forms.TextInput(attrs={'class':'form-control', 'minlength':"0.0", 'maxlength':"1000.00",'placeholder': 'Ingrese el Monto','required':'true'}))
-    idPasajero = forms.ChoiceField()
+    #idPasajero = forms.ChoiceField(label='Pasajero')
     class Meta:
         model = Tarjeta
         fields=["codigo","monto","idPasajero"]
