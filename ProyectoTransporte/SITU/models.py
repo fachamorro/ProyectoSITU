@@ -5,9 +5,10 @@ class Pasajero(models.Model):
 	nombre = models.CharField(max_length=10, blank=False)
 	imagen = models.ImageField(upload_to='img/%Y/%m/%d/')
 	apellido = models.CharField(max_length=30)
+	telefono= models.CharField(max_length=10, default="")
 	email = models.EmailField()
 	def __str__(self):
-		return self.cedula
+		return f'{self.cedula} {self.nombre} {self.apellido}'
 
 class Tarjeta(models.Model):
 	codigo = models.CharField(max_length=6, blank=False)

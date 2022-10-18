@@ -21,5 +21,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #path('SITU/', include('SITU.urls')),
     path('pasajeros/', pasajeros, name='pasajeros'),
-    path('pasajerosEdit/<id>', pasajerosEdit, name='pasajerosEdit')
+    path('pasajerosEdit/<id>', pasajerosEdit, name='pasajerosEdit'),
+    path('pasajerosView/<id>', pasajerosView, name='pasajerosView'),
+    path('pasajerosEliminar/<id>', pasajerosEliminar, name='pasajerosEliminar'),
+    #tarjetas
+    path('tarjetas/', tarjetas, name='tarjetas'),
+    path('tarjetasEdit/<id>', tarjetasEdit, name='tarjetasEdit'),
+    path('tarjetasView/<id>', tarjetasView, name='tarjetasView'),
+    path('tarjetasEliminar/<id>', tarjetasEliminar, name='tarjetasEliminar'),
 ]

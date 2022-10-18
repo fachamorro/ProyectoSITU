@@ -5,8 +5,7 @@
 - Python 3.9.15
 - Django==3.2.5
 - Entorno virtual de python 
-- Drag and drop markdown and HTML files into Dillinger
-- Export documents as Markdown, HTML and PDF
+
 
 ## _Implementación_
 Se requiere descargar el repositorio en un directorio/carpeta y activar el entorno virtual de python.
