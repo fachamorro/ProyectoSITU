@@ -15,7 +15,7 @@ git clone https://github.com/fachamorro/ProyectoSITU.git
 cd ProyectoSITU
 source bin/activate
 cd ProyectoTransporte
-python3 manage.py makemigrations
+python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 ```
